@@ -1,9 +1,8 @@
 import { Router } from 'express';
+import { getMessages } from '../controllers/indexController.js';
 
 const indexRouter = Router();
 
-indexRouter.get('/', (req, res) => {
-  res.send('You\'ve requested the "/" page');
-});
+indexRouter.get('/', getMessages);
 
 export default indexRouter;

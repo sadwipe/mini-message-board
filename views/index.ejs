@@ -1,0 +1,27 @@
+<html>
+<title>
+  Mini Message Board
+</title>
+
+<body>
+  <header>
+    <h1 class='title'>Mini Message Board!</h1>
+  </header>
+  <main>
+    <ul class="messages-container">
+      <% messages.map(message => { %>
+      <li class="message">
+        <h3>From: <%= message.user %></h3>
+        <p>Message: <%= message.text %></p>
+        <p>Date: <%= message.added %></p>
+      </li>
+      <% }) %>
+    </ul>
+    <a href="/new">Add message!</a>
+  </main>
+  <footer>
+    Footer
+  </footer>
+</body>
+
+</html>
