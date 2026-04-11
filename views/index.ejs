@@ -1,12 +1,14 @@
 <html>
-<title>
-  Mini Message Board
-</title>
+
+<head>
+  <title>
+    Mini Message Board
+  </title>
+  <link rel="stylesheet" href="/style.css">
+</head>
 
 <body>
-  <header>
-    <h1 class='title'>Mini Message Board!</h1>
-  </header>
+  <%- include('header') %>
   <main>
     <ul class="messages-container">
       <% messages.map(message => { %>
@@ -19,9 +21,6 @@
     </ul>
     <a href="/new">Add message!</a>
   </main>
-  <footer>
-    Footer
-  </footer>
 </body>
 
 </html>

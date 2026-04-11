@@ -2,13 +2,13 @@ import formatDate from '../utils/formatDate.js';
 
 export const messages = [
   {
-    text: 'Hi there!',
-    user: 'Amando',
+    text: 'Rooibos',
+    user: 'Marius',
     added: formatDate(new Date()),
   },
   {
-    text: 'Hello World!',
-    user: 'Charles',
+    text: 'Earl Grey',
+    user: 'George',
     added: formatDate(new Date()),
   },
 ];
