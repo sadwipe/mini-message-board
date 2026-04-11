@@ -1,53 +1,42 @@
-/* style.css */
-
-/* import refined font (Google Fonts - Kumbh Sans) */
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap');
 
 :root {
-  /* Updated Color Palette for Better Contrast */
-  --leaf-green-header: #6b8e23; /* Same green, but defined as header bg */
-  --leaf-green-accents: #5c7b1e; /* Slightly darker green for links/borders */
-  --matcha-bg-page: #f9f8f4; /* Warmer, slightly darker beige background */
-  --cream-card-bg: #ffffff; /* pure white for the modals/cards for contrast */
-  --steeped-brown-text: #3c2a1e; /* Darker brown for main text */
+  --leaf-green-header: #6b8e23;
+  --leaf-green-accents: #5c7b1e;
+  --matcha-bg-page: #f9f8f4;
+  --cream-card-bg: #ffffff;
+  --steeped-brown-text: #3c2a1e;
   --vapor-white: #faf9f6;
-  --honey-accent: #d69842; /* Slightly richer accent */
+  --honey-accent: #d69842;
 }
 
 body {
-  /* Font Family update to match the aesthetic */
   font-family: 'Kumbh Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-  /* Update background color */
   background-color: var(--matcha-bg-page);
-
   color: var(--steeped-brown-text);
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 1.6;
-  min-height: 100vh; /* Ensures footer stays down */
+  min-height: 100vh;
 }
 
 header {
-  /* The "container" header is now more pronounced and prominent */
   background-color: var(--leaf-green-header);
   width: 100%;
-  padding: 3rem 0; /* Increased padding vertically */
+  padding: 3rem 0;
   text-align: center;
   color: white;
-
-  /* Increased shadows for definition */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.05); /* Subtle bottom separator */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .title {
   margin: 0;
-  font-weight: 600; /* Pronounced but elegant weight */
+  font-weight: 600;
   letter-spacing: 1.5px;
-  text-transform: capitalize; /* Cleaner header style */
+  text-transform: capitalize;
 }
 
 main {
@@ -56,23 +45,17 @@ main {
   padding: 3rem 0;
 }
 
-/* --- Message List/Card Styles (Increased Contrast) --- */
 .messages-container {
   list-style: none;
   padding: 0;
 }
 
 .message {
-  background-color: var(--cream-card-bg); /* Now pure white */
-
-  /* The left accent bar is slightly darker green */
+  background-color: var(--cream-card-bg);
   border-left: 5px solid var(--leaf-green-accents);
-
   margin-bottom: 1.5rem;
   padding: 1.5rem;
   border-radius: 6px;
-
-  /* Stronger, defined shadow so it lifts off the page bg */
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
 }
 
@@ -83,27 +66,22 @@ main {
   font-weight: 700;
 }
 
-/* --- Form Styles (Increased Contrast) --- */
 form {
-  background-color: var(
-    --cream-card-bg
-  ); /* Now pure white to contrast page bg */
+  background-color: var(--cream-card-bg);
   padding: 2.5rem;
   border-radius: 12px;
-  max-width: 450px; /* Slightly wider */
+  max-width: 450px;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-
-  /* Same lifting shadow as the cards */
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
 }
 
 .form-title {
-  color: var(--steeped-brown-text); /* Darker brown */
-  font-size: 1.6rem; /* Bigger title */
-  font-weight: 700; /* More pronounced */
+  color: var(--steeped-brown-text);
+  font-size: 1.6rem;
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 0.8rem;
   text-align: center;
@@ -111,10 +89,7 @@ form {
 
 input {
   padding: 0.8rem;
-
-  /* Darker border for contrast against inputs */
   border: 1px solid #c8d1b7;
-
   border-radius: 4px;
   font-size: 1rem;
   color: var(--steeped-brown-text);
@@ -132,7 +107,6 @@ button {
   color: #ffffff;
   padding: 1rem 2rem;
   border: none;
-  /* Match the input rounding */
   border-radius: 50px;
   cursor: pointer;
   font-size: 1.1rem;
@@ -153,7 +127,6 @@ button:active {
   transform: translateY(0);
 }
 
-/* --- Links --- */
 a {
   color: var(--leaf-green-accents);
   text-decoration: none;
@@ -167,7 +140,6 @@ a:hover {
   color: var(--honey-accent);
 }
 
-/* specifically target the add message link at bottom */
 main > a:last-of-type {
   display: block;
   text-align: center;
@@ -175,37 +147,32 @@ main > a:last-of-type {
   margin-top: 2rem;
 }
 
-/* Updated Interactive Inputs */
 input[type='text'] {
-  padding: 1rem 1.5rem; /* Larger padding for a spacious feel */
-  border: 2px solid #d1d9c5; /* Slightly thicker, muted border */
-  border-radius: 50px; /* Pill-shaped rounding */
+  padding: 1rem 1.5rem;
+  border: 2px solid #d1d9c5;
+  border-radius: 50px;
   background-color: #ffffff;
-  font-size: 1.1rem; /* Bigger text inside */
+  font-size: 1.1rem;
   color: var(--steeped-brown-text);
   font-family: 'Kumbh Sans', sans-serif;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother interaction */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
-  box-sizing: border-box; /* Ensures padding doesn't break width */
+  box-sizing: border-box;
 }
 
-/* Interaction: Hover */
 input[type='text']:hover {
   border-color: #b5c49a;
   background-color: var(--vapor-white);
 }
 
-/* Interaction: Active Focus */
 input[type='text']:focus {
   outline: none;
   border-color: var(--leaf-green-accents);
   background-color: #ffffff;
-  /* Adds a soft "glow" effect */
   box-shadow: 0 0 0 4px rgba(107, 142, 35, 0.15);
-  transform: translateY(-1px); /* Subtle lift when typing */
+  transform: translateY(-1px);
 }
 
-/* Optional: Style the placeholder text to be lighter */
 input::placeholder {
   color: #a0a0a0;
   font-weight: 300;
